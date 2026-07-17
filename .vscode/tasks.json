@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SCF: Build",
+      "type": "shell",
+      "command": "idf.py build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "SCF: Flash and Monitor",
+      "type": "shell",
+      "command": "idf.py flash monitor",
+      "problemMatcher": []
+    },
+    {
+      "label": "SCF: Menuconfig",
+      "type": "shell",
+      "command": "idf.py menuconfig",
+      "problemMatcher": []
+    }
+  ]
+}

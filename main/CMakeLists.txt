@@ -1,0 +1,31 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "wifi_manager.c"
+        "tls_transport.c"
+        "crypto_engine.c"
+        "peer_store.c"
+        "session_manager.c"
+        "protocol.c"
+        "ota_manager.c"
+        "generated/peer_registry.c"
+    INCLUDE_DIRS
+        "."
+        "generated"
+    REQUIRES
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        esp-tls
+        mbedtls
+        json
+        app_update
+        esp_https_ota
+        esp_http_client
+    EMBED_TXTFILES
+        "certs/relay_ca.crt"
+        "certs/client.crt"
+        "certs/client.key"
+        "certs/identity.key"
+)

@@ -1,0 +1,32 @@
+build*/
+sdkconfig
+sdkconfig.old
+dependencies.lock
+managed_components/
+pki/
+*.pem
+*.key
+*.crt
+!main/certs/README.md
+!main/certs/relay_ca.crt
+!main/certs/client.crt
+!main/certs/client.key
+!main/certs/identity.key
+.vscode/c_cpp_properties.json
+__pycache__/
+.venv/
+*.pyc
+relay-runtime/
+ota/
+release-keys/
+
+# Security-sensitive generated material
+*.p12
+*.pfx
+# Local development
+venv/
+build/
+.pytest_cache/
+# OTA binaries and signing artifacts
+ota/*.bin
+*.sig

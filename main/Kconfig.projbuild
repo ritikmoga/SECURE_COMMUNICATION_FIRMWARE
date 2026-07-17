@@ -1,0 +1,42 @@
+menu "Secure Communication Firmware"
+
+config SCF_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+
+config SCF_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+
+config SCF_RELAY_HOST
+    string "Relay hostname or IP"
+    default "192.168.1.10"
+
+config SCF_RELAY_PORT
+    int "Relay TLS port"
+    range 1 65535
+    default 7443
+
+config SCF_NTP_SERVER
+    string "NTP server used before TLS certificate validation"
+    default "pool.ntp.org"
+
+config SCF_TIME_SYNC_TIMEOUT_SECONDS
+    int "Initial time synchronization timeout (seconds)"
+    range 5 120
+    default 30
+
+config SCF_TLS13_ONLY
+    bool "Require TLS 1.3"
+    default y
+
+config SCF_OTA_URL
+    string "Default HTTPS OTA URL"
+    default ""
+
+config SCF_MAX_MESSAGE_BYTES
+    int "Maximum plaintext message bytes"
+    range 32 1024
+    default 256
+
+endmenu
