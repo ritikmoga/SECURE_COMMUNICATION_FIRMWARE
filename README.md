@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Secure Communication Firmware
 
 A complete reference project for two or more ESP32-S3 devices that exchange
@@ -653,3 +654,7 @@ This repository also includes:
 - `docs/screenshots/08_device_cli_interaction.png`
 
 The browser dashboard screenshots are concept mockups for presentation purposes. The implemented runtime components are the ESP32-S3 firmware, authenticated relay, device CLI, and HTTPS OTA file server.
+=======
+# SECURE_COMMUNICATION_FIRMWARE
+A platform or medium of communication between two or more parties at a time and there will be no risk of data breaching.
+>>>>>>> c36a40a3a56a7ab6ab13717e8fa109389f6cb7f8
